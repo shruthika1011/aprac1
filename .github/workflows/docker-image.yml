@@ -29,8 +29,8 @@ jobs:
       - name: Build and Push Backend Image
         uses: docker/build-push-action@v6
         with:
-          context: ./Backend-expensetracker
-          file: ./Backend-expensetracker/backend.Dockerfile
+          context: ./Backend-expensetracker/Springbootproject
+          file: ./Backend-expensetracker/Springbootproject/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/ansiblepracbackend:shru
 
